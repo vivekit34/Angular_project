@@ -1,0 +1,18 @@
+<h2 style="color: rgb(42, 91, 165); text-align: center; margin-bottom: 2px;">Product details</h2>
+<div class="d-flex flex-wrap justify-content-evenly" id="box">
+  <div class="card col-lg-3 mb-4" style="width: 18rem;" *ngFor="let product of Products" >
+     <img [src]="product.img" class="card-img-top im"  >
+    <div class="card-body">
+      <h5 class="card-title">{{product.ProductTitle}}</h5>
+      <p class="card-text">Laptop with 8GB RAM, 256GB SSD storage, 4000mah battery</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">ID : {{product.ProductId}}</li>
+      <li class="list-group-item">Title : {{product.ProductTitle}}</li>
+      <li class="list-group-item">Price : {{product.Productprice}}</li>
+    </ul>
+    <div class="card-body">
+      <button class="btn btn-info">Add to Cart</button>
+      <button class="btn btn-primary">view</button>
+    </div>
+  </div>

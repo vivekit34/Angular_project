@@ -1,0 +1,13 @@
+<p>event-binding-calculator works!</p>
+
+<h1 style="text-align: center;"> Basic Calculator</h1>
+Enter first number: <input type="text" #num1>
+Enter Second Number: <input type="text" #num2>
+<br>
+<button (click)="addData(num1.value, num2.value)">Add</button>
+<button (click)="subData(num1.value, num2.value)">Sub</button>
+<button (click)="mulData(num1.value, num2.value)">Mul</button>
+<button (click)="divData(num1.value, num2.value)">Divide</button>
+<br>
+Result: {{result}}
+

@@ -1,0 +1,10 @@
+<div>Product-1</div>
+<div *ngIf="isProductDisplay">Product-2</div>
+<div>Product-3</div>
+<ul *ngFor="let product of products">
+    <li>{{product}}</li>
+</ul>
+
+<ul *ngFor="let employee of employees">
+    <li>{{employee.name}}-{{employee.age}}-{{employee.salary}}</li>
+</ul>

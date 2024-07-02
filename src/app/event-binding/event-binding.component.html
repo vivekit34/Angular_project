@@ -1,0 +1,14 @@
+<div>
+    <p>Calculator</p>
+    <label>Enter first number:</label>
+    <input type="text" #numm1 id="num1"/><br/><br/>
+    <label>Enter Second number:</label>
+    <input type="text" #numm2 id="num2"><br/><br/>
+    <label>Result: </label>
+    <input type="text" id="result" value="{{result}}">
+<br/><br/>
+<button (click)="addNumbers(numm1.value, numm2.value)">Add </button>
+<button (click)="subNumbers(numm1.value, numm2.value)">Substract </button>
+<button (click)="divideNumbers(numm1.value, numm2.value)">Divide </button>
+<button (click)="mulNumbers(numm1.value, numm2.value)">Multiplication</button>
+</div>
